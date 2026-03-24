@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Juande Molina</title>
+    <meta name="description" content="Portfolio personal de Juande Molina, estudiante de Informática.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Ambient background -->
+    <div class="bg-blob bg-blob-1"></div>
+    <div class="bg-blob bg-blob-2"></div>
+    <div class="bg-blob bg-blob-3"></div>
+
+    <!-- ─── NAVBAR ────────────────────────────────────────────────────── -->
+    <nav class="navbar">
+        <a href="#hero" class="navbar-brand">Juande <span>Molina</span></a>
+        <div class="navbar-spacer"></div>
+
+        <button class="navbar-toggle" id="navToggle" aria-label="Menú">
+            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+
+        <ul class="navbar-nav" id="navMenu">
+            <li><a class="nav-link" href="#about">Sobre mí</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#timeline">Trayectoria</a></li>
+            <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-content">
+
+        <!-- ════════════════════════════════════════════
+             HERO
+        ════════════════════════════════════════════ -->
+        <section id="hero">
+            <div class="hero-inner">
+                <h1 class="hero-name anim-slide-up">
+                    Hola, soy<br><em>Juande Molina.</em>
+                </h1>
+
+                <p class="hero-role anim-slide-up anim-delay-1">
+                    Estudiante de 2º de Bachillerato · Futuro Ingeniero Informático
+                </p>
+
+                <p class="hero-desc anim-slide-up anim-delay-2">
+                    Programador desde los 13 años con especial interés en el desarrollo backend.
+                    Actualmente finalizando 2º de Bachillerato y preparándome para iniciar el Grado en Ingeniería
+                    Informática el próximo curso, con el objetivo de profesionalizar mi pasión por crear soluciones de
+                    software eficientes y escalables.
+                </p>
+
+                <div class="hero-actions anim-slide-up anim-delay-3">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            stroke-width="2.2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0l-4-4m4 4l-4 4" />
+                        </svg>
+                        Ver proyectos
+                    </a>
+                    <a href="https://github.com/JuandeMolina" target="_blank" rel="noopener" class="btn btn-ghost">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                        </svg>
+                        GitHub
+                    </a>
+                    <a href="mailto:mp.juande@gmail.com" class="btn btn-ghost">
+                        <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            stroke-width="2.2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        Email
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-scroll">
+                Scroll
+                <div class="hero-scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════
+             SOBRE MÍ
+        ════════════════════════════════════════════ -->
+        <section id="about">
+            <div class="section-inner">
+                <div class="reveal">
+                    <div class="section-eyebrow">
+                        <div class="section-eyebrow-dot"></div>Sobre mí
+                    </div>
+                    <h2 class="section-title">Quién soy</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p>
+                            Soy Juande, futuro estudiante de Ingeniería Informática. Gran parte de
+                            mis recuerdos de la infancia son frente al ordenador, lo que respalda
+                            mi vocación por esta disciplina.
+                        </p>
+                        <p>
+                            Me considero un perfil con iniciativa,
+                            capacidad de liderazgo y visión organizativa. Disfruto coordinando equipos
+                            y transformando ideas en proyectos.
+                        </p>
+                        <p>
+                            Aunque mi experiencia se basa en el desarrollo web con Python, mantengo una
+                            curiosidad activa por la IA y la ciberseguridad.
+                        </p>
+                    </div>
+
+                    <div class="about-facts reveal">
+                        <div class="fact-card">
+                            <div class="fact-icon fact-icon-blue">📍</div>
+                            <div>
+                                <div class="fact-label">Ubicación</div>
+                                <div class="fact-value">Úbeda, Jaén (España)</div>
+                            </div>
+                        </div>
+                        <div class="fact-card">
+                            <div class="fact-icon fact-icon-green">🎓</div>
+                            <div>
+                                <div class="fact-label">Estudios</div>
+                                <div class="fact-value">Bachillerato Tecnológico</div>
+                                <br>
+                                <div class="fact-label">Próximamente...</div>
+                                <div class="fact-value">Grado en Ingeniería Informática</div>
+                            </div>
+                        </div>
+                        <div class="fact-card">
+                            <div class="fact-icon fact-icon-amber">💡</div>
+                            <div>
+                                <div class="fact-label">Intereses</div>
+                                <div class="fact-value">Backend · IA · Ciberseguridad</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════
+             SKILLS
+        ════════════════════════════════════════════ -->
+        <section id="skills">
+            <div class="section-inner">
+                <div class="reveal">
+                    <div class="section-eyebrow">
+                        <div class="section-eyebrow-dot"></div>Tecnologías
+                    </div>
+                    <h2 class="section-title">Skills</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="skills-groups reveal">
+                    <div>
+                        <div class="skill-group-label">Lenguajes</div>
+                        <div class="skill-chips">
+                            <span class="skill-chip">
+                                <img src="https://cdn.simpleicons.org/python/3776AB" width="16" height="16" alt="Python"
+                                    style="margin-right:8px;">
+                                Python
+                            </span>
+                            <span class="skill-chip">
+                                <img src="https://cdn.simpleicons.org/go/00ADD8" width="16" height="16" alt="Go"
+                                    style="margin-right:8px;">
+                                Go
+                            </span>
+                            <span class="skill-chip">
+                                <img src="https://cdn.simpleicons.org/sqlite/003B57" width="16" height="16" alt="SQL"
+                                    style="margin-right:8px;">
+                                SQL
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="skill-group-label">Frameworks</div>
+                        <div class="skill-chips">
+                            <span class="skill-chip">
+                                <img src="https://cdn.simpleicons.org/flask/000000" width="16" height="16" alt="Flask"
+                                    style="margin-right:8px;">
+                                Flask
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="skill-group-label">Herramientas</div>
+                        <div class="skill-chips">
+                            <span class="skill-chip">
+                                <img src="https://unpkg.com/simple-icons@v9/icons/github.svg" width="16" height="16"
+                                    alt="GitHub" style="margin-right:8px; filter: brightness(0) saturate(100%);">
+                                Git & GitHub
+                            </span>
+                            <span class="skill-chip">
+                                <img src="https://unpkg.com/simple-icons@v9/icons/visualstudiocode.svg" width="16"
+                                    height="16" alt="VS Code"
+                                    style="margin-right:8px; filter: invert(31%) sepia(94%) hide(1951%) saturation(2500%) brightness(95%) contrast(105%);">
+                                VS Code
+                            </span>
+                            <span class="skill-chip">
+                                <img src="https://unpkg.com/simple-icons@v9/icons/linux.svg" width="16" height="16"
+                                    alt="Linux" style="margin-right:8px; filter: brightness(0); opacity: 0.85;">
+                                Linux
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════
+             LÍNEA DEL TIEMPO
+        ════════════════════════════════════════════ -->
+        <section id="timeline">
+            <div class="section-inner">
+                <div class="reveal">
+                    <div class="section-eyebrow">
+                        <div class="section-eyebrow-dot"></div>Trayectoria
+                    </div>
+                    <h2 class="section-title">Mi camino en informática</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">~ 2020</div>
+                        <div class="timeline-title">Curiosidad por la programación</div>
+                        <p class="timeline-desc">
+                            Primeros programas y juegos simples con Scratch, que me ayudaron
+                            a obtener las nociones básicas de la programación.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2021</div>
+                        <div class="timeline-title">Primer "Hello, world!"</div>
+                        <p class="timeline-desc">
+                            Comencé a aprender Python en clase de Tecnología en 1º de secundaria,
+                            despertando aquí mi interés por la programación.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2022</div>
+                        <div class="timeline-title">Primer proyecto registrado</div>
+                        <p class="timeline-desc">
+                            Un pequeño juego de preguntas tipo <em>trivial</em> creado
+                            usando Python y JSON.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-title">Introducción a la POO</div>
+                        <p class="timeline-desc">
+                            Aprendí a estructurar el código usando objetos, lo que me permitió
+                            crear proyectos más grandes.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2025</div>
+                        <div class="timeline-title">Flask y desarrollo backend</div>
+                        <p class="timeline-desc">
+                            Aprendizaje de Flask para construir aplicaciones web completas.
+                            Bases de datos, autenticación y APIs REST.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2026 ~ hoy</div>
+                        <div class="timeline-title">Proyectos propios y aprendizaje continuo</div>
+                        <p class="timeline-desc">
+                            Desarrollo de proyectos personales como NanoLink y aprendizaje
+                            de lenguajes de programación como Go.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════
+             PORTFOLIO
+        ════════════════════════════════════════════ -->
+        <section id="portfolio">
+            <div class="section-inner">
+                <div class="reveal">
+                    <div class="section-eyebrow">
+                        <div class="section-eyebrow-dot"></div>Proyectos
+                    </div>
+                    <h2 class="section-title">Portfolio</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!--
+                        ✏️  EDITA o añade tarjetas de proyecto.
+                        Copia un bloque .project-card para añadir más proyectos.
+                    -->
+                    <div class="card project-card reveal">
+                        <div class="project-icon">🔗</div>
+                        <h3 class="project-title">NanoLink</h3>
+                        <p class="project-desc">
+                            Acortador de URLs con panel de usuario, autenticación y estadísticas.
+                            Proyecto personal desarrollado con Flask y SQLite.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Flask</span>
+                            <span class="project-tag">SQLite</span>
+                            <span class="project-tag">HTML/CSS</span>
+                        </div>
+                        <a href="https://github.com/TU_USUARIO/nanolink" target="_blank" rel="noopener"
+                            class="project-link">
+                            Ver en GitHub
+                            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!--
+                        ✏️  Proyecto de ejemplo vacío — edítalo con tu segundo proyecto.
+                    -->
+                    <div class="card project-card reveal">
+                        <div class="project-icon">🚀</div>
+                        <h3 class="project-title">Próximo proyecto</h3>
+                        <p class="project-desc">
+                            ¡Pronto! Actualmente trabajando en algo nuevo.
+                            Puedes seguir mis avances en GitHub.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">En construcción</span>
+                        </div>
+                        <a href="https://github.com/TU_USUARIO" target="_blank" rel="noopener" class="project-link">
+                            Ver GitHub
+                            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════
+             CONTACTO
+        ════════════════════════════════════════════ -->
+        <section id="contact">
+            <div class="section-inner">
+                <div class="card contact-card reveal">
+                    <h2 class="contact-title">¿Hablamos? <em>Escríbeme.</em></h2>
+                    <p class="contact-desc">
+                        Estoy abierto a colaboraciones, proyectos interesantes
+                        o simplemente charlar sobre tecnología.
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:mp.juande@gmail.com" class="btn btn-primary">
+                            <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                stroke-width="2.2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            Enviar email
+                        </a>
+                        <a href="https://github.com/TU_USUARIO" target="_blank" rel="noopener" class="btn btn-ghost">
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div><!-- /page-content -->
+
+    <!-- ─── FOOTER ──────────────────────────────────────────────────────── -->
+    <footer>
+        Juande Molina · <span id="year"></span>
+    </footer>
+
+    <!-- ─── SCRIPTS ─────────────────────────────────────────────────────── -->
+    <script>
+        // Año automático en el footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Hamburger menu (móvil)
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        navToggle.addEventListener('click', () => navMenu.classList.toggle('open'));
+        navMenu.querySelectorAll('a').forEach(a =>
+            a.addEventListener('click', () => navMenu.classList.remove('open'))
+        );
+
+        // Scroll reveal
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        reveals.forEach(el => observer.observe(el));
+
+        // Navbar active link highlight
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(s => {
+                if (window.scrollY >= s.offsetTop - 90) current = s.id;
+            });
+            navLinks.forEach(l => {
+                l.style.color = l.getAttribute('href') === '#' + current
+                    ? 'var(--blue)' : '';
+            });
+        }, { passive: true });
+    </script>
+
+</body>
+
+</html>
